@@ -69,12 +69,9 @@ var styles = StyleSheet.create({
 
     resultPayload: {
       flex: 0.95,
-      //flexWrap: 'wrap'
     },
 
       resultText: {
-
-        //flexWrap: 'wrap'
       },
 
       resultMeta: {
@@ -85,9 +82,7 @@ var styles = StyleSheet.create({
           marginRight: 10
         },
         resultAya: {
-
         },
-
 
     resultButton: {
       flex: 0.05,
