@@ -8,6 +8,8 @@ var {
   ScrollView
 } = React;
 
+var SuraScene = require('./SuraScene')
+
 var SearchResultScene = React.createClass({
 
   getInitialState() {
@@ -47,7 +49,10 @@ var SearchResultScene = React.createClass({
   },
 
   navigateToResult() {
-    console.log('yay! goto werkt');
+    this.props.navigator.push({
+         name: 'SuraScene',
+         component: SuraScene
+     });
   },
 
 });
