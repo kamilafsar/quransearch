@@ -5,6 +5,7 @@ var {
   Text,
   View,
   TouchableHighlight,
+  ScrollView
 } = React;
 
 var SearchResultScene = React.createClass({
@@ -18,13 +19,13 @@ var SearchResultScene = React.createClass({
 
   render() {
       return (
-        <View style={styles.screen}>
+        <ScrollView style={styles.screen}>
           <ListView
             style={styles.cantainer}
             dataSource={this.state.dataSource}
             renderRow={this.renderRow}
           />
-      </View>
+      </ScrollView>
       );
   },
 
