@@ -42,19 +42,17 @@ var SureScene = React.createClass({
 var styles = StyleSheet.create({
   screen: {
     marginTop: 20,
+    backgroundColor: '#ffffff',
   },
   container: {
-    backgroundColor: '#F5FCFF',
   },
   suraName: {
-    fontSize: 30
+    fontSize: 20
   },
     aya: {
-      flexDirection: 'column',
+      flexDirection: 'row',
       alignItems: 'center',
-      backgroundColor: '#ffffff',
-      borderBottomWidth: 1,
-      paddingHorizontal: 20,
+      borderBottomWidth: 1
     },
 
 });

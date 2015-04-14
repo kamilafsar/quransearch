@@ -23,7 +23,7 @@ var SearchResultScene = React.createClass({
       return (
         <ScrollView style={styles.screen}>
           <ListView
-            style={styles.cantainer}
+            style={styles.container}
             dataSource={this.state.dataSource}
             renderRow={this.renderRow}
           />
@@ -60,33 +60,38 @@ var SearchResultScene = React.createClass({
 var styles = StyleSheet.create({
   screen: {
     marginTop: 20,
+    backgroundColor: '#ffffff',
+    paddingHorizontal: 5,
   },
   container: {
-    backgroundColor: '#F5FCFF',
   },
     result: {
       flexDirection: 'row',
       alignItems: 'center',
-      backgroundColor: '#ffffff',
-      borderBottomWidth: 1,
-      paddingHorizontal: 20,
+      borderBottomWidth: 1
     },
 
     resultPayload: {
       flex: 0.95,
+      padding: 5
     },
 
       resultText: {
       },
 
       resultMeta: {
-        flexDirection: 'row'
+        flexDirection: 'row',
+        paddingTop: 5
       },
 
         resultSura: {
-          marginRight: 10
+          marginRight: 5,
+          color: '#a0a0a0',
+          fontSize: 11
         },
         resultAya: {
+          color: '#a0a0a0',
+          fontSize: 11
         },
 
     resultButton: {
